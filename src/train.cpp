@@ -7,9 +7,9 @@ void Train :: addCage(bool light) {
   item->prev = nullptr;
   Cage* temp;
   item->light = light;
-  if (first == nullptr)// добавление первого(начального) э-та
+  if (first == nullptr) {// добавление первого(начального) э-та
     first = item;
-  else {
+  } else {
     if (first->next == nullptr) {// добавление второго э-та
       first->next = item;
       first->prev = item;
